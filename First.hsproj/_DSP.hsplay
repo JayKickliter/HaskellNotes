@@ -1,0 +1,20 @@
+-- Haskell Playground 1.0
+let w1 = hamming'' 128
+let w2 = hamming'' 128
+
+dotp w1 w2
+
+U.reverse w1
+
+sinc 1
+
+-- DSP.Filters.firprototype(5, Lowpass(0.25))
+-- 0.159155  0.225079  0.25  0.225079  0.159155
+
+firPrototype 0.25 5 2
+
+firPrototype' 0.25 5
+
+sinc 0
+
+sinpi 
