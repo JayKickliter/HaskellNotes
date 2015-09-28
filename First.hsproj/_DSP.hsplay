@@ -4,6 +4,7 @@ let w2 = hamming 128
 
 dotp w1 w2
 
+
 U.reverse w1
 
 sinc 1
@@ -21,3 +22,4 @@ sinc 0
 add w1 w2
 w1
 w2
+

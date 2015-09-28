@@ -26,9 +26,9 @@ hamming' len n = 0.54 - 0.46 * cos((2 * pi * n') / (len' - 1))
 
 -- | Creates a Hamming window vector
 hamming :: Int -> U.Vector Double
-hamming len = U.generate len go
-  where
-    go = \x -> hamming' x len
+hamming len = U.generate len $ hamming' len
+
+
 
 -- | Computes FIR filter prototype values
 prototype' :: (RealFloat a) => a -> Int -> Int -> a
